@@ -13,9 +13,15 @@ class Prodcut
 
   // fetch product data using getData Method
   public function getData($table = 'product') {
-   $result = $this->db->con->query("SELECT * FROM {$table}");
+    $result = $this->db->con->query("SELECT * FROM {$table}");
 
-   $resultArray = array();
-  }
+    $resultArray = array();
   
+    // fetch product data one by one
+    while($item = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+      $resultArray[] = $item;
+    }
+
+    return $resultArray;
+  }
 }
