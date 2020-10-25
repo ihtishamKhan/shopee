@@ -26,12 +26,12 @@
 
 
   /* include new-phones area */
-    include('Template/_banner-ads.php');
+    include('Template/_new-phones.php');
   /* !include new-phones area */
 
 
   /* include blogs area */
-    include('Template/_banner-ads.php');
+    include('Template/_blogs.php');
   /* !include blogs area */
 
 ?> 
