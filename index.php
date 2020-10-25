@@ -20,9 +20,9 @@
   /* !include special-price area */
 
 
-  /* include special-price area */
+  /* include banner area */
     include('Template/_banner-ads.php');
-  /* !include special-price area */
+  /* !include banner area */
 
 
   /* include new-phones area */
