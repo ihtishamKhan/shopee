@@ -5,6 +5,9 @@
   
   //require Product Class
   require('database/Product.php');
+  
+  //require Cart Class
+  require('database/Cart.php');
    
   
   // DBController object
@@ -12,5 +15,8 @@
 
   // Product object
   $product = new Prodcut($db);
+
+  // Cart obbject
+  $Cart = new Cart($db);
 ?>
 
