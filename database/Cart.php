@@ -45,7 +45,27 @@ Class Cart
         // reload page
         header("Location".$_SERVER['PHP_SELF']);
       }
+    }
+  }
 
+  // calculate sub total
+  public function getSum($arr){
+    if(isset($arr)){
+      $sum = 0;
+      foreach ($arr as $item){
+        $sum += floatval($item[0]);
+      }
+      return sprintf('%.2f' , $sum);
+    }
+  }
+
+  // get item_it of shopping cart list
+  public function getCartId($cartArray = null, $key = "item_id"){
+    if ($cartArray != null){
+      $cart_id = array_map(function ($value) use($key){
+        return $value[$key];
+      }, $cartArray);
+      return $cart_id;
     }
   }
 }
