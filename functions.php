@@ -15,6 +15,7 @@
 
   // Product object
   $product = new Prodcut($db);
+  $product_shuffle = $product->getData();
 
   // Cart obbject
   $Cart = new Cart($db);
