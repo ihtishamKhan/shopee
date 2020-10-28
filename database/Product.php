@@ -1,7 +1,7 @@
 <?php
 
 // Use to fetch product data
-class Prodcut
+class Product
 {
   public $db = null;
 
@@ -41,3 +41,5 @@ class Prodcut
     }
   }
 }
+
+?>
